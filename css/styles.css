@@ -1,0 +1,101 @@
+/*
+color scheme:
+- light boy blue: #6A7FDB;
+- sage: #B6D094;
+- smoky black: #110B11;
+- bedez blue: #274690;
+- magic potion: #FF4365;
+*/
+
+/* global styles */
+body {
+	font-family: 'Lato Regular', sans-serif;
+	color: #110B11;
+}
+
+.container {
+	position: relative;
+	margin-top: 10%
+}
+
+footer {
+	margin-top: -10%;
+}
+
+.btn-toolbar {
+	justify-content: center;
+	display: flex;
+}
+
+h1, h3, .name {
+	font-family: 'Abril Fatface Regular', cursive;
+	font-weight: normal;
+}
+
+h1, .name {
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+.connect a, .navbar-light .navbar-nav .nav-link {
+	color: #6A7FDB;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.connect a:hover, .connect-bio a:hover, .navbar-light .navbar-nav .nav-link:hover { 
+	color: #B6D094;
+	text-decoration: none;
+}
+
+.active, u {
+	text-decoration: underline #FF4365;
+}
+
+.navbar .navbar-toggler-icon {
+	background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=6a7fdb');
+}
+
+.btn-primary {
+	font-size: 30px;
+	color: #6A7FDB;
+    background-color: #fff;
+    border-color: #fff;
+    margin-right: -1%
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #FF4365;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* home page */
+.name {
+	color: #FF4365;
+}
+
+.connect {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+/* about page */
+.descrip {
+	font-size: 25px;
+}
+
+.emphasis {
+	color: #274690;
+	font-weight: bold;
+	background: #B6D094;
+}
+
+.font-italic {
+	color: #FF4365;
+	font-weight: bold;
+}
+
