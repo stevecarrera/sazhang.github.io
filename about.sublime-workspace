@@ -1,0 +1,343 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fle",
+				"flex-end\tjustify-content"
+			],
+			[
+				"bac",
+				"background-image\tproperty"
+			],
+			[
+				"bak",
+				"background-size\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"btn-",
+				"btn-lg"
+			],
+			[
+				"marg",
+				"margin-right\tproperty"
+			],
+			[
+				"pa",
+				"padding-bottom\tproperty"
+			],
+			[
+				"i",
+				"italic\tfont-style"
+			],
+			[
+				"font",
+				"font-style\tproperty"
+			],
+			[
+				"rb",
+				"rgba()\tbackground"
+			],
+			[
+				"tr",
+				"transform\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"col",
+				"col-12"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"spa",
+				"word-spacing\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"h",
+				"h5\tTag"
+			],
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"ou",
+				"outline\tproperty"
+			],
+			[
+				"out",
+				"outline-color\tproperty"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"l",
+				"li\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/CNAME",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/animated-styles.css",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/css/styles.css",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/animated-blob.html",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/blog.html",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/index.html",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/animated-styles",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/about.html",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/projects.html",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/README.md",
+		"/C/Users/Sarah Zhang/Desktop/sazhang.github.io/images/blob-shape-pink.svg",
+		"/C/Users/Sarah Zhang/Documents/script.js",
+		"/C/Users/Sarah Zhang/Documents/css-tut/blog.html",
+		"/C/Users/Sarah Zhang/Documents/css-tut/projects.html",
+		"/C/Users/Sarah Zhang/Documents/css-tut/css/styles.css",
+		"/C/Users/Sarah Zhang/Documents/css-tut/about.html",
+		"/C/Users/Sarah Zhang/Documents/css-tut/index.html",
+		"/C/Users/Sarah Zhang/AppData/Local/Temp/Temp1_favicomatic.zip/code.txt",
+		"/C/Users/Sarah Zhang/Documents/css-tut/home.html",
+		"/C/Users/Sarah Zhang/Documents/css-tut/pages/blog.html",
+		"/C/Users/Sarah Zhang/Documents/css-tut/pages/projects.html",
+		"/C/Users/Sarah Zhang/Documents/css-tut/styles.css",
+		"/C/Users/Sarah Zhang/Documents/index.html",
+		"/C/Users/Sarah Zhang/Documents/css-tut/style.css",
+		"/C/Users/Sarah Zhang/Documents/djangonotes",
+		"/C/Users/Sarah Zhang/Documents/code-review-11-30.html",
+		"/C/Users/Sarah Zhang/Documents/22.md",
+		"/C/Users/Sarah Zhang/Documents/code_review_10_19",
+		"/C/Users/Sarah Zhang/Documents/23.md",
+		"/C/Users/Sarah Zhang/Downloads/hw11.lisp",
+		"/C/wow/workspace/cs2800/hw08.lisp",
+		"/C/Users/Sarah Zhang/Documents/lemma",
+		"/C/wow/workspace/cs2800/class-notes",
+		"/C/Users/Sarah Zhang/Documents/hw10.lisp",
+		"/C/wow/workspace/cs2800/hw10.lisp",
+		"/C/Users/Sarah Zhang/Documents/angular-notes",
+		"/C/Users/Sarah Zhang/Documents/hw07.lisp",
+		"/C/Users/Sarah Zhang/Downloads/20.md",
+		"/C/Users/Sarah Zhang/Downloads/19.md",
+		"/C/Users/Sarah Zhang/Downloads/20-b.md",
+		"/C/Users/Sarah Zhang/pawa-sazh/Santorini/Design/tournament-manager-protocol.txt",
+		"/C/Users/Sarah Zhang/Downloads/server-spread.md",
+		"/C/Users/Sarah Zhang/Downloads/hw09.lisp",
+		"/C/Users/Sarah Zhang/Downloads/weird-git-thing.txt",
+		"/C/Users/Sarah Zhang/Downloads/17.md",
+		"/C/Users/Sarah Zhang/Downloads/hw08.lisp",
+		"/C/wow/workspace/cs2800/hw08d.lisp",
+		"/C/Users/Sarah Zhang/pawa-sazh/11/santorini.rc/1-in.json",
+		"/C/Users/Sarah Zhang/Downloads/tournament-manager-protocol.txt",
+		"/C/wow/workspace/cs2800/hw06df.lisp",
+		"/C/wow/workspace/cs2800/13.md",
+		"/C/wow/workspace/cs2800/14.md",
+		"/C/Users/Sarah Zhang/Documents/code_review_10_19.html",
+		"/C/Users/Sarah Zhang/Downloads/15.md",
+		"/C/Users/Sarah Zhang/sazh-yizh/6/xboard.sh",
+		"/C/Users/Sarah Zhang/sazh-yizh/8/xstrategy",
+		"/C/Users/Sarah Zhang/sazh-yizh/xrules.sh",
+		"/C/Users/Sarah Zhang/sazh-yizh/7/README.md",
+		"/C/Users/Sarah Zhang/sazh-yizh/7/TESTME.md.txt",
+		"/C/wow/workspace/cs2800/hw04dup.lisp",
+		"/C/Users/Sarah Zhang/workspace/cs2800/hw04.lisp",
+		"/C/Users/Sarah Zhang/sazh-yizh/6/README.md",
+		"/C/Users/Sarah Zhang/sazh-yizh/7/test.json",
+		"/C/Users/Sarah Zhang/sazh-yizh/7/xruless.sh"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"B6D094",
+			"6a7fdb",
+			"6A7FDB",
+			"fluid",
+			"app",
+			"min-l",
+			"gives rise",
+			"using the",
+			"using",
+			"min-l",
+			"\\/",
+			"using",
+			"defunc in",
+			"in e",
+			"check="
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "about.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
