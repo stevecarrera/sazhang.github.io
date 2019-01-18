@@ -18,20 +18,31 @@ body {
 }
 
 .blobs {
-	height: 100%;
-	/*background-size: cover;*/
+	margin:auto; 
+    height:auto; 
+    overflow:auto;
+    position: absolute;
+	top: 10%;
+	right: 10%;
+	background-color: lightyellow;
+	/*background-size: cover;
 	background-image: 
 		url(../images/blob-shape-blue-2.svg),
 		url(../images/blob-shape-green.svg);
 	background-position:
 		top 75px right -100px,
 		top 40px right -25px;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
+
+/*.blobs:hover {
+  transform: scale(1.5);  (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
+}*/
 
 .container {
 	position: flex;
 	margin-top: 10%
+/*	background-color: red;*/
 }
 
 h1, h3, .name {
