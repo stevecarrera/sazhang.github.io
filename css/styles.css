@@ -26,14 +26,14 @@ h1 {
 
 /* navbar*/
 nav {
-  background-color: #0E1116;
+  background-color: #5D737E;
 }
 
-nav a, .connect a {
+a {
   color: #FEFFFE;
 }
 
-nav a:hover, .connect a:hover {
+a:hover {
   color: #F3B61F;
 }
 
@@ -56,6 +56,7 @@ nav a:hover, .connect a:hover {
   text-align: center;
   margin: 0 auto;
   padding: 4rem 3rem;
+  padding-bottom: 20px;
 }
 
 /* landing */
@@ -65,32 +66,27 @@ nav a:hover, .connect a:hover {
   height: 100vh;
   display: block;
   position: relative;
+  
 }
 
 .connect {
   display: block;
   position: relative;
   color: #FEFFFE;
+  font-size: 1.5em;
 }
 
 /* about me */
-#about-me {
+#about-me, #projects, #influences {
   background-color: #0E1116;
   display: block;
   position: relative;
+  font-size: 1.5em;
 }
 
-/* #projects {
-  
+#projects a {
+  color: #F3B61F;
 }
-
-#influences {
-  
-}
-
-#lets-connect {
-  
-} */
 
 .btn-toolbar {
   display: block;
