@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 5em;
   color: var(--muted-gold);
 }
 
@@ -51,33 +51,43 @@ a {
   top: 0px;
 }
 
-/* containers */
-.container {
+/* all sections */
+section {
   max-width: 75%;
-  padding: 3rem 3rem;
-  text-align: center;
-}
-
-#landing, #about-me, #projects {
   margin: 100vh auto;
   margin-top: 25vh;
 }
 
-#about-me, #projects, #influences {
-  padding-top: 75px;
+.anchor{
+  display: block;
+  height: 25vh;
+  margin-top: -25vh;
+  visibility: hidden;
+}
+
+/* container */
+.container {
   background-color: #D2D7DF;
+}
+
+.container a {
+  color: #034078;
+  text-decoration: underline;
+}
+
+.container a:hover {
+  text-decoration: none;
+}
+
+#landing, #lets-connect, .container {
+  padding: 3rem 3rem;
+  text-align: center;
   display: block;
   position: relative;
   font-size: 1em;
 }
 
-/* landing */
-#landing {
-  width: 100%;
-  display: block;
-  position: relative;
-}
-
+/* landing section */
 .connect {
   display: block;
   position: relative;
@@ -85,22 +95,16 @@ a {
   font-size: 1.5em;
 }
 
-/* projects */
-#projects a {
-  color: #034078;
-  text-decoration: underline;
-}
+/* projects section */
 
-#projects a:hover {
-  text-decoration: none;
-}
 
-/* influences */
+/* influences section */
 .my-fav-list {
   text-align: left;
   margin-left: 15%;
 }
 
+/* let's connect section */
 .btn-toolbar {
   display: block;
   position: relative;
