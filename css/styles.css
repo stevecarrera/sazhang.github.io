@@ -2,6 +2,8 @@
 :root {
   --space-cadet: #232741;
   --muted-gold: #FFBA49;
+  --light-shade: #FFBBA3;
+  --mid-shade: #8999FF;
 }
 
 /* global styles */
@@ -18,29 +20,28 @@ h1, h2 {
   font-weight: normal;
 }
 
-h1 {
-  font-size: 5em;
-  color: var(--muted-gold);
+h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
-/* navbar*/
-nav {
-  background-color: var(--space-cadet);
-}
-
-.navbar .navbar-toggler-icon {
-	background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=6a7fdb');
-}
-
-/* navbar & first module links */
-a {
+nav a, #landing a {
   color: white;
 }
 
-.navbar-brand, a:hover {
+.navbar-brand, a:hover  {
   color: var(--muted-gold);
 }
 
+/* navigation bar */
+nav {
+  background-color: var(--space-cadet);
+  font-size: 1.2em;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=FFBA49');
+}
 
 /* particles */
 #particles-js {
@@ -51,43 +52,25 @@ a {
   top: 0px;
 }
 
-/* all sections */
-section {
-  max-width: 75%;
-  margin: 100vh auto;
-  margin-top: 25vh;
-}
-
-.anchor{
-  display: block;
-  height: 25vh;
-  margin-top: -25vh;
-  visibility: hidden;
-}
-
-/* container */
-.container {
-  background-color: #D2D7DF;
-}
-
-.container a {
-  color: #034078;
-  text-decoration: underline;
-}
-
-.container a:hover {
-  text-decoration: none;
-}
-
-#landing, #lets-connect, .container {
-  padding: 3rem 3rem;
-  text-align: center;
-  display: block;
-  position: relative;
-  font-size: 1em;
-}
-
 /* landing section */
+#landing {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+#landing .container {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+#landing h1 {
+  font-size: 5em;
+  color: var(--muted-gold);
+  margin-bottom: 0;
+}
+
 .connect {
   display: block;
   position: relative;
@@ -95,35 +78,156 @@ section {
   font-size: 1.5em;
 }
 
-/* projects section */
+/* container */
+.container {
+  /* background-color: #D2D7DF; */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
 
+/* some space to jump to */
+.anchor {
+  display: block;
+  height: 25vh;
+  margin-top: -25vh;
+  visibility: hidden;
+}
+
+/* rest of the sections */
+#about-me, #projects, #influences {
+  position: relative;
+  padding: 3rem 3rem;
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+/* h2 effect */
+.underline-effect {
+  background-image: linear-gradient(120deg, var(--light-shade) 0%, var(--mid-shade) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline-effect:hover {
+  background-size: 100% 88%;
+}
+
+/* about me section */
+#about-me {
+  background-color: white;
+  
+}
+
+/* projects section */
+#projects {
+  background-color: white;
+}
+
+#projects a {
+  color: var(--space-cadet);
+  font-weight: bold;
+}
+
+#projects a:hover {
+  text-decoration: underline var(--space-cadet);
+}
 
 /* influences section */
-.my-fav-list {
-  text-align: left;
-  margin-left: 15%;
+#influences {
+  background-color: white;
+}
+
+#influences ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* let's connect section */
+#lets-connect {
+  padding: 3rem 0;
+}
+
 .btn-toolbar {
-  display: block;
+  display: flex;
   position: relative;
   justify-content: center;
 }
 
 .btn-primary {
-  font-size: 1.5em;
+  font-size: 2.5em;
   background-color: var(--space-cadet);
   border-color: var(--space-cadet);
-  color: var(--muted-gold);
+  color: var(--light-shade);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: white;
   background-color: var(--space-cadet);
   border-color: var(--space-cadet);
+}
+
+/* responsive to size */
+@media screen and (max-width: 580px) {
+  #landing h1 {
+    font-size: 3em;
+  }
+
+  .connect {
+    font-size: 1.5em;
+  }
+
+  #about-me, #projects, #influences {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  .btn-primary {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #landing h1 {
+    font-size: 2.75em;
+  }
+
+  .connect {
+    font-size: 1.35em;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  .btn-primary {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #landing h1 {
+    font-size: 2.25em;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #about-me, #projects, #influences {
+    padding: 2rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 1.3em;
+  }
 }

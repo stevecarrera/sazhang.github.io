@@ -12,44 +12,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
 
 	<!--my icon-->
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128" />
-	<meta name="application-name" content="&nbsp;"/>
-	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	<meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="images/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="images/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="images/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="images/mstile-310x310.png" />
+	<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
 	<header>
 		<!--nav bar-->
 		<nav class="navbar fixed-top navbar-expand-sm">
-		<a class="navbar-brand" href="#">SZ</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle nav">
-		    	<span class="navbar-toggler-icon"></span>
-		  	</button>
-  			<div class="collapse navbar-collapse" id="navbarToggler">
-    			<ul class="navbar-nav ml-auto">
-					<a class="nav-item nav-link" href="#about-me">about</a>
-					<a class="nav-item nav-link" href="#projects">projects</a>
-					<a class="nav-item nav-link" href="#influences">influences</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+			 aria-expanded="false" aria-label="Toggle nav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav ml-auto">
+					<a class="nav-item nav-link" href="#about-sec">about</a>
+					<a class="nav-item nav-link" href="#projects-sec">projects</a>
+					<a class="nav-item nav-link" href="#influences-sec">influences</a>
 					<a class="nav-item nav-link" href="#lets-connect">connect</a>
 				</ul>
-  			</div>
+			</div>
 		</nav>
 	</header>
 		
@@ -57,7 +39,7 @@
 		<!--landing module-->
 		<div id="particles-js"></div>
 		<section id="landing">
-			<div>
+			<div class="container">
 				<h1>Sarah Zhang</h1>
 				<span class="connect">
 					<a href="mailto:zhang.sar@husky.neu.edu">email</a> /
@@ -67,57 +49,55 @@
 					<a href="https://twitter.com/szhangster">twitter</a>
 				</span>
 			</div>
-	</section>
+		</section>
 
 		<!--about me blurb-->
-		<section>
-			<span id="about-me" class="anchor"></span>
+		<section id="about-me">
+			<span id="about-sec" class="anchor"></span>
 			<div class="container">
-				<h2>About me</h2>
+				<h2><span class="underline-effect">About me</span></h2>
 				<p>Through my varied experiences from customer service to mental health nonprofit to police department to research
-					labs, one thing has remained constant—my desire to help others. Allured by the endless opportunities to enact change
-					more directly through technology, I switched majors to Computer Science and Cognitive Psychology my junior year. I'm
-					currently finishing my last semester. In my free time, you can find me binging podcasts, taking photos,
-					fiddling with CodePens, or playing around with Adobe creative tools.</p>
+					labs, one thing has remained constant—<span class="underline-effect"><strong>my desire to help others.</strong></span>
+					Allured by the endless opportunities to enact change more directly through technology, I switched majors to Computer
+					Science and Cognitive Psychology my junior year. I'm currently finishing my last semester. In my free time, you can find 
+					me binging podcasts, taking photos, fiddling with CodePens, or playing around with Adobe creative tools.</p>
 			</div>
 		</section>
 
 		<!--project cards-->
-		<section>
-			<span id="projects" class="anchor"></span>
+		<section id="projects">
+			<span id="projects-sec" class="anchor"></span>
 			<div class="container">
-				<h2>Projects</h2>
+				<h2><span class="underline-effect">Projects</span></h2>
 				<p>currently working on: <a href="http://podscraper-env.zhecf24cjp.us-east-1.elasticbeanstalk.com/" target="_blank"><strong>podfavs</strong></a></p>
 			</div>
 		</section>
 		
 		<!--influence list-->
-		<section>
-			<span id="influences" class="anchor"></span>
+		<section id="influences">
+			<span id="influences-sec" class="anchor"></span>
 			<div class="container">
-				<h2>Influences</h2>
-				<p>A growing list of works that have shaped my perspective...<br></p>
-				<div class="my-fav-list">
-					<strong>Readings:</strong>
-					<ul>
-						<li>Thinking, Fast and Slow - Daniel Kahneman</li>
-						<li>The Power of Habit - Charles Duhigg</li>
-						<li>The Design of Everyday Things - Don Norman</li>
-						<li>Brave New World - Aldous Huxley</li>
-					</ul>
-					<strong>Podcasts:</strong>
-					<ul>
-						<li>Hidden Brain</li>
-						<li>IQ2US</li>
-						<li>Freakonomics</li>
-					</ul>
-				</div>
+				<h2><span class="underline-effect">Influences</span></h2>
+				<p>A growing list of works that have shaped my perspective</p>
+				<strong>Readings:</strong>
+				<ul>
+					<li>Thinking, Fast and Slow - Daniel Kahneman</li>
+					<li>The Power of Habit - Charles Duhigg</li>
+					<li>The Design of Everyday Things - Don Norman</li>
+					<li>Brave New World - Aldous Huxley</li>
+				</ul>
+				<strong>Podcasts:</strong>
+				<ul>
+					<li>Hidden Brain</li>
+					<li>IQ2US</li>
+					<li>Freakonomics</li>
+				</ul>
 			</div>
 		</section>
-
-		<!--social media links-->
 		
-			<div id="lets-connect">
+		<!--social media links-->
+		<section id="lets-connect">
+			<div class="container">
 				<div class="btn-toolbar" role="toolbar" aria-label="sm links">
 					<a class="btn btn-primary" href="mailto:zhang.sar@husky.neu.edu"><i class="far fa-envelope"></i></a>
 					<a class="btn btn-primary" href="https://github.com/sazhang"><i class="fab fa-github-square"></i></a>
@@ -126,7 +106,7 @@
 					<a class="btn btn-primary" href="https://www.instagram.com/sarah.h.z/"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>
-		
+		</section>
 	</main>
 
 	<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
