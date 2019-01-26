@@ -129,10 +129,7 @@ nav {
 #projects a {
   color: var(--space-cadet);
   font-weight: bold;
-}
-
-#projects a:hover {
-  text-decoration: underline var(--space-cadet);
+  text-decoration: underline;
 }
 
 /* influences section */
