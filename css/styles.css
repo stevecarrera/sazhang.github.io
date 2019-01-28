@@ -1,16 +1,9 @@
 /* color scheme */
 :root {
-  --space-cadet: #232741;
-  --muted-gold: #ffba49;
-  --light-shade: #ffbba3;
-  --mid-shade: #8999ff;
-  --deep-space-sparkle: #444C7F;
-}
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  --space-cadet: #1F2041;
+  --sandstorm: #EEC643;
+  --perfume-pink: #FF88DC;
+  --sky-blue: #8999ff;
 }
 
 /* global styles */
@@ -32,7 +25,7 @@ img {
   text-align: left;
 }
 
-h1, h2 {
+h1, h2, h4 {
   font-family: "Abril Fatface", cursive;
   font-weight: normal;
 }
@@ -47,7 +40,7 @@ nav a, #landing a {
 }
 
 nav a:hover {
-  color: var(--muted-gold);
+  color: var(--sandstorm);
 }
 
 /* navigation bar */
@@ -80,7 +73,7 @@ nav {
 
 /* particles */
 #particles-js {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   left: 0px;
@@ -93,6 +86,7 @@ nav {
   padding: 0;
   height: 100vh;
   overflow-y: hidden;
+  position: relative;
 }
 
 #landing .container {
@@ -102,7 +96,7 @@ nav {
 
 #landing h1 {
   font-size: 5em;
-  color: var(--muted-gold);
+  color: var(--sandstorm);
   margin-bottom: 0;
 }
 
@@ -117,6 +111,7 @@ nav {
   max-width: 100%;
   margin: 0 auto;
   padding: 3rem 3rem;
+  
 }
 
 /* some space to jump to */
@@ -128,21 +123,21 @@ nav {
 }
 
 /* rest of the sections */
-#about-me,
-#projects,
-#influences {
+#about-me, #projects, #influences {
   position: relative;
   padding: 3rem 3rem;
   font-size: 1.2rem;
   align-content: center;
+  justify-content: center;
+  background-color: white;
 }
 
 /* h2 effect */
 .underline-effect {
   background-image: linear-gradient(
     120deg,
-    var(--light-shade) 0%,
-    var(--mid-shade) 100%
+    var(--perfume-pink) 0%,
+    var(--sky-blue) 100%
   );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
@@ -156,7 +151,6 @@ nav {
 
 /* about me section */
 #about-me {
-  background-color: white;
   height: 100%;
 }
 
@@ -166,11 +160,9 @@ nav {
 
 /* projects section */
 #projects {
-  background-color: white;
   text-align: center;
   display: grid;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
 .grid {
@@ -189,8 +181,8 @@ nav {
   align-items: center;
   height: 200px;
   width: 300px;
-  color: white;
-  background-color: var(--deep-space-sparkle);
+  color: var(--sandstorm);
+  background-color: var(--space-cadet);
 }
 
 .grid-item a {
@@ -201,6 +193,11 @@ nav {
 .descrip {
   display: none;
   position: absolute;
+  color: white;
+}
+
+.descrip a {
+  color: var(--sandstorm);
 }
 
 .grid-item:hover > .descrip {
@@ -212,9 +209,6 @@ nav {
 }
 
 /* influences section */
-#influences {
-  background-color: white;
-}
 
 #influences ul {
   list-style: none;
@@ -226,12 +220,10 @@ nav {
 }
 
 /* let's connect section */
-#lets-connect {
-  padding: 3rem 0;
-}
-
+/* footer */
 footer {
-  background-color: white;
+  position: relative;
+  padding: 2rem 0;
 }
 
 footer .btn-toolbar {
@@ -242,18 +234,18 @@ footer .btn-toolbar {
 
 footer .btn-primary {
   font-size: 2.5em;
-  background-color: white;
+  background-color: var(--space-cadet);
   border: none;
-  color: var(--deep-space-sparkle);
+  color: var(--sandstorm);
 }
 
 footer .btn-primary:hover,
 footer .btn-primary:focus,
 footer .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: white;
+  background-color: var(--space-cadet);
   border: none;
-  color: var(--deep-space-sparkle);
+  color: var(--sandstorm);
 }
 
 /* responsive to size */
