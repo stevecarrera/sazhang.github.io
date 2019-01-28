@@ -1,23 +1,35 @@
 /* color scheme */
 :root {
   --space-cadet: #232741;
-  --muted-gold: #FFBA49;
-  --light-shade: #FFBBA3;
-  --mid-shade: #8999FF;
+  --muted-gold: #ffba49;
+  --light-shade: #ffbba3;
+  --mid-shade: #8999ff;
+  --deep-space-sparkle: #444C7F;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* global styles */
 html, body {
   font-family: "Open Sans", sans-serif;
-  margin: 0;
   background-color: var(--space-cadet);
-  padding-top: 40px;
   color: black;
   scroll-behavior: smooth;
 }
 
 img {
   width: 100%;
+}
+
+.pic-grid {
+  display: grid;
+  grid-gap: 10%;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
 }
 
 h1, h2 {
@@ -34,7 +46,7 @@ nav a, #landing a {
   color: white;
 }
 
-.navbar-brand, a:hover  {
+nav a:hover {
   color: var(--muted-gold);
 }
 
@@ -45,7 +57,7 @@ nav {
 }
 
 .navbar .navbar-toggler-icon {
-  background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=FFBA49');
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger5.svg?color=FFBA49");
 }
 
 /* from Hover.css */
@@ -104,7 +116,7 @@ nav {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 3rem 3rem;
 }
 
 /* some space to jump to */
@@ -116,16 +128,22 @@ nav {
 }
 
 /* rest of the sections */
-#about-me, #projects, #influences {
+#about-me,
+#projects,
+#influences {
   position: relative;
   padding: 3rem 3rem;
   font-size: 1.2rem;
+  align-content: center;
 }
 
 /* h2 effect */
 .underline-effect {
-  /* background-image: linear-gradient(120deg, var(--light-shade) 0%, var(--mid-shade) 100%); */
-  background-image: linear-gradient(120deg, var(--light-shade) 0%, var(--mid-shade) 100%);
+  background-image: linear-gradient(
+    120deg,
+    var(--light-shade) 0%,
+    var(--mid-shade) 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -142,27 +160,56 @@ nav {
   height: 100%;
 }
 
-.pic-grid {
-  display: grid;
-  grid-gap: 10%;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: left;
+#about-me img {
+  margin: 10px 0;
 }
 
 /* projects section */
 #projects {
   background-color: white;
-}
-/* 
-#projects a {
-  color: var(--mid-shade);
-  font-weight: bold;
-  text-decoration: underline;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-#projects a:hover {
-  color: var(--space-cadet);
-} */
+.grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  color: white;
+  background-color: var(--deep-space-sparkle);
+}
+
+.grid-item a {
+  font-size: 1.5em;
+  color: white;
+}
+
+.descrip {
+  display: none;
+  position: absolute;
+}
+
+.grid-item:hover > .descrip {
+  display: block;
+}
+
+.grid-item:hover > h3 {
+  display: none;
+}
 
 /* influences section */
 #influences {
@@ -174,31 +221,39 @@ nav {
   padding-left: 0;
 }
 
+#influences img {
+  margin: 10vh 0;
+}
+
 /* let's connect section */
 #lets-connect {
   padding: 3rem 0;
 }
 
-.btn-toolbar {
+footer {
+  background-color: white;
+}
+
+footer .btn-toolbar {
   display: flex;
   position: relative;
   justify-content: center;
 }
 
-.btn-primary {
+footer .btn-primary {
   font-size: 2.5em;
-  background-color: var(--space-cadet);
-  border-color: var(--space-cadet);
-  color: var(--muted-gold);
+  background-color: white;
+  border: none;
+  color: var(--deep-space-sparkle);
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.active,
+footer .btn-primary:hover,
+footer .btn-primary:focus,
+footer .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: var(--space-cadet);
-  border-color: var(--space-cadet);
-  color: var(--muted-gold);
+  background-color: white;
+  border: none;
+  color: var(--deep-space-sparkle);
 }
 
 /* responsive to size */
@@ -211,7 +266,9 @@ nav {
     font-size: 1.5em;
   }
 
-  #about-me, #projects, #influences {
+  #about-me,
+  #projects,
+  #influences {
     padding: 2rem 1rem;
   }
 
@@ -236,7 +293,7 @@ nav {
   h2 {
     font-size: 2.5rem;
   }
-  
+
   .btn-primary {
     font-size: 2em;
   }
@@ -251,7 +308,9 @@ nav {
     font-size: 2rem;
   }
 
-  #about-me, #projects, #influences {
+  #about-me,
+  #projects,
+  #influences {
     padding: 2rem 0.5rem;
     font-size: 1rem;
   }
