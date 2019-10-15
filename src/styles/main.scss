@@ -1,5 +1,14 @@
-$bg: blue;
+$bg: lavender;
 
 body {
   background: $bg;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
 }
