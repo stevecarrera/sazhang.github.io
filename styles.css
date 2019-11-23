@@ -1,0 +1,68 @@
+:root {
+  --base-unit: 24px;
+  --border-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linen;
+}
+
+nav {
+  background: lightsteelblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--base-unit);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 calc(var(--base-unit) / 2);
+}
+
+nav > ul {
+  background: lightyellow;
+  list-style: none;
+}
+
+nav > ul li {
+  background: lightpink;
+  display: inline;
+  margin-right: calc(var(--base-unit) / 2);
+}
+
+.contact li:last-of-type {
+  margin-right: 0;
+}
+
+.desktop {
+  background: mintcream;
+}
+
+.desktop__icons {
+  background: rosybrown;
+  position: absolute;
+  top: calc(var(--base-unit) * 2);
+  left: var(--base-unit);
+}
+
+.icons__row {
+  list-style: none;
+}
+
+.icons__row li {
+  display: inline-block;
+  background: silver;
+  margin: var(--base-unit);
+}
+
+.icon {
+  background: honeydew;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
