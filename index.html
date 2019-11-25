@@ -22,8 +22,8 @@
     </nav>
   </header>
 
-  <div class="desktop">
-    <div class="desktop__icons">
+  <main class="desktop">
+    <div class="icons">
       <ul class="icons__row">
         <li>
           <div class="icon">
@@ -45,26 +45,75 @@
         </li>
       </ul>
       <ul class="icons__row">
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">readme.md</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">work</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">github</span>
-            </div>
-          </li>
-        </ul>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">readme.md</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">work</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">github</span>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
+    <div class="window window_folder">
+      <header class="title-bar">
+        <span class="title-bar__icon"></span>
+        <span class="title-bar__title">work</span>
+        <button class="title-bar__icon">x</button>
+      </header>
+      <ul class="icons__row">
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">work.md</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">work.md</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">work.md</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="window window_file">
+      <section>
+        <header class="title-bar">
+          <span class="title-bar__icon"></span>
+          <span class="title-bar__title">work.md</span>
+          <button class="title-bar__icon">x</button>
+        </header>
+        <article>
+          <h1>work</h1>
+          <p>
+            Just because we have these fancy sectioning elements now, it doesn’t mean that the good old div element has lost all of its usefulness. 
+            div has no semantic meaning, so it is quite useful whenever we are altering the HTML purely for the sake of styling purposes.
+
+            Let’s say that we have a blog post contained inside an article element that we need to wrap in something for the sake of styling purposes.
+            Reaching for the section element in this circumstance is not the right thing to do.
+
+            Though section is technically a generic element, div is the far more appropriate option in this circumstance. 
+            This new wrapping container is not meant to have any semantic meaning behind it and that is exactly what div is designed to be used for.
+          </p>
+        </article>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
