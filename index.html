@@ -13,7 +13,7 @@
       <ul class="menu">
         <li>Sarah Zhang</li>
         <li>About</li>
-        <li>Work</li>
+        <li>Resume</li>
       </ul>
       <ul class="contact">
         <li>Email</li>
@@ -115,5 +115,17 @@
       </section>
     </div>
   </main>
+
+  <script>
+    const windowBtns = document.querySelectorAll('button.title-bar__icon');
+
+    for (let i = 0; i < windowBtns.length; i++) {
+      let btn = windowBtns[i];
+      btn.addEventListener('click', event => {
+        let window = btn.closest('.window');
+        window.classList.add('hidden');
+      });
+    }
+  </script>
 </body>
 </html>
