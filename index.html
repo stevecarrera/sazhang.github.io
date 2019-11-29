@@ -6,101 +6,81 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sarah Zhang</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav>
       <ul class="menu">
         <li>Sarah Zhang</li>
-        <li>About</li>
-        <li>Resume</li>
       </ul>
       <ul class="contact">
-        <li>Email</li>
-        <li>LinkedIn</li>
+        <li><a href="https://github.com/sazhang" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:zhang.sar@husky.neu.edu">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/szhang96/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="desktop">
+    <!-- desktop icons -->
     <div class="icons">
       <ul class="icons__row">
         <li>
-          <div class="icon">
+          <div class="icon" id="about-icon">
             <div class="icon__img">i</div>
-            <span class="icon__title">readme.md</span>
+            <span class="icon__title">about.md</span>
           </div>
         </li>
         <li>
           <div class="icon">
             <div class="icon__img">i</div>
-            <span class="icon__title">work</span>
+            <span class="icon__title">resume.pdf</span>
           </div>
         </li>
         <li>
-          <div class="icon">
+          <div class="icon" id="projects-icon">
             <div class="icon__img">i</div>
-            <span class="icon__title">github</span>
+            <span class="icon__title">projects</span>
           </div>
         </li>
       </ul>
       <ul class="icons__row">
         <li>
-          <div class="icon">
+          <div class="icon" id="blog-icon">
             <div class="icon__img">i</div>
-            <span class="icon__title">readme.md</span>
+            <span class="icon__title">blog</span>
           </div>
         </li>
         <li>
-          <div class="icon">
-            <div class="icon__img">i</div>
-            <span class="icon__title">work</span>
-          </div>
+          <a href="https://www.instagram.com/sarah.h.z/" target="_blank" rel="noopener noreferrer">
+            <div class="icon">
+              <div class="icon__img">i</div>
+              <span class="icon__title">instagram</span>
+            </div>
+          </a>
         </li>
         <li>
-          <div class="icon">
-            <div class="icon__img">i</div>
-            <span class="icon__title">github</span>
-          </div>
+          <a href="https://twitter.com/szhangster" target="_blank" rel="noopener noreferrer">
+            <div class="icon">
+              <div class="icon__img">i</div>
+              <span class="icon__title">twitter</span>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
-    <div class="window window_folder">
-      <header class="title-bar">
-        <span class="title-bar__icon"></span>
-        <span class="title-bar__title">work</span>
-        <button class="title-bar__icon">x</button>
-      </header>
-      <ul class="icons__row">
-        <li>
-          <div class="icon">
-            <div class="icon__img">i</div>
-            <span class="icon__title">work.md</span>
-          </div>
-        </li>
-        <li>
-          <div class="icon">
-            <div class="icon__img">i</div>
-            <span class="icon__title">work.md</span>
-          </div>
-        </li>
-        <li>
-          <div class="icon">
-            <div class="icon__img">i</div>
-            <span class="icon__title">work.md</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="window window_file">
+
+    <!-- about file -->
+    <div class="window window_file" id="about-window">
       <section>
         <header class="title-bar">
           <span class="title-bar__icon"></span>
-          <span class="title-bar__title">work.md</span>
+          <span class="title-bar__title">about.md</span>
           <button class="title-bar__icon">x</button>
         </header>
         <article>
-          <h1>work</h1>
+          <h1>about</h1>
           <p>
             Just because we have these fancy sectioning elements now, it doesn’t mean that the good old div element has lost all of its usefulness. 
             div has no semantic meaning, so it is quite useful whenever we are altering the HTML purely for the sake of styling purposes.
@@ -114,18 +94,66 @@
         </article>
       </section>
     </div>
+      
+    <!-- project folder -->
+    <div class="window window_folder" id="projects-window">
+      <header class="title-bar">
+        <span class="title-bar__icon"></span>
+        <span class="title-bar__title">projects</span>
+        <button class="title-bar__icon">x</button>
+      </header>
+      <ul class="icons__row">
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">project1</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">project2</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">project3</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- blog folder -->
+    <div class="window window_folder" id="blog-window">
+      <header class="title-bar">
+        <span class="title-bar__icon"></span>
+        <span class="title-bar__title">blog</span>
+        <button class="title-bar__icon">x</button>
+      </header>
+      <ul class="icons__row">
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">blog1.md</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">blog2.md</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">
+            <div class="icon__img">i</div>
+            <span class="icon__title">blog3.md</span>
+          </div>
+        </li>
+      </ul>
+    </div>
   </main>
 
-  <script>
-    const windowBtns = document.querySelectorAll('button.title-bar__icon');
-
-    for (let i = 0; i < windowBtns.length; i++) {
-      let btn = windowBtns[i];
-      btn.addEventListener('click', event => {
-        let window = btn.closest('.window');
-        window.classList.add('hidden');
-      });
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
