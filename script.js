@@ -48,7 +48,15 @@ function dragElement(el) {
     currentY = initY - e.clientY;
     initX = e.clientX;
     initY = e.clientY;
-    el.style.top = (el.offsetTop - currentY) + "px";
+    if (el.offsetTop - currentY < 24) {
+      el.style.top = 24 + "px";
+    } else {
+      el.style.top = (el.offsetTop - currentY) + "px";
+    }
+    
+    if (el.offsetLeft - currentX < 0) {
+      el.style.left = 0 + "px";
+    }
     el.style.left = (el.offsetLeft - currentX) + "px";
   }
 

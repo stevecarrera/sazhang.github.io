@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <nav>
@@ -22,8 +24,8 @@
     </nav>
   </header>
 
+  <!-- desktop icons -->
   <main class="desktop">
-    <!-- desktop icons -->
     <div class="icons">
       <ul class="icons__row">
         <li>
@@ -82,19 +84,24 @@
         <article>
           <h1>about</h1>
           <p>
-            Just because we have these fancy sectioning elements now, it doesn’t mean that the good old div element has lost all of its usefulness. 
-            div has no semantic meaning, so it is quite useful whenever we are altering the HTML purely for the sake of styling purposes.
+            Just because we have these fancy sectioning elements now, it doesn’t mean that the good old div element has
+            lost all of its usefulness.
+            div has no semantic meaning, so it is quite useful whenever we are altering the HTML purely for the sake of
+            styling purposes.
 
-            Let’s say that we have a blog post contained inside an article element that we need to wrap in something for the sake of styling purposes.
+            Let’s say that we have a blog post contained inside an article element that we need to wrap in something for
+            the sake of styling purposes.
             Reaching for the section element in this circumstance is not the right thing to do.
 
-            Though section is technically a generic element, div is the far more appropriate option in this circumstance. 
-            This new wrapping container is not meant to have any semantic meaning behind it and that is exactly what div is designed to be used for.
+            Though section is technically a generic element, div is the far more appropriate option in this
+            circumstance.
+            This new wrapping container is not meant to have any semantic meaning behind it and that is exactly what div
+            is designed to be used for.
           </p>
         </article>
       </section>
     </div>
-      
+
     <!-- project folder -->
     <div class="window window_folder" id="projects-window">
       <header class="title-bar">
@@ -152,8 +159,19 @@
         </li>
       </ul>
     </div>
+
+    <svg width="100%" height="100%">
+      <defs>
+        <pattern id="graph" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+          <g fill-rule="evenodd"><g fill="#8699d1" fill-opacity="0.4"><path opacity=".5" d="M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z" /><path d="M6 5V0H5v5H0v1h5v94h1V6h94V5H6z" /></g></g>
+        </pattern>
+      </defs>
+
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#graph)" />
+    </svg>
   </main>
 
   <script src="script.js"></script>
 </body>
+
 </html>

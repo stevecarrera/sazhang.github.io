@@ -1,6 +1,10 @@
 :root {
   --base-unit: 24px;
   --border-color: black;
+  --body-color: #d9e0fc;
+  --bar-color: #ffe0f1;
+  --gradient-1: #d9e0fc;
+  --gradient-2: #bfffe6;
 }
 
 /* global element styles */
@@ -11,7 +15,6 @@
 }
 
 body {
-  background: linen;
   font-family: 'Source Code Pro', monospace;
 }
 
@@ -19,9 +22,14 @@ button {
   cursor: pointer;
 }
 
+.desktop {
+  background-image: linear-gradient(19deg, var(--gradient-1) , var(--gradient-2));
+  height: 100vh;
+}
+
 /* main navigation style */
 nav {
-  background: lightsteelblue;
+  background: var(--bar-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,12 +40,12 @@ nav {
 }
 
 nav > ul {
-  background: lightyellow;
+  /* background: lightyellow; */
   list-style: none;
 }
 
 nav > ul li {
-  background: lightpink;
+  /* background: lightpink; */
   display: inline;
   margin-right: calc(var(--base-unit) / 2);
 }
@@ -46,14 +54,9 @@ nav > ul li {
   margin-right: 0;
 }
 
-/* home page - desktop style */
-.desktop {
-  background: mintcream;
-}
-
 /* icon styles */
 .icons {
-  background: rosybrown;
+  background: lemonchiffon;
   position: absolute;
   top: calc(var(--base-unit) * 2);
   left: var(--base-unit);
@@ -66,12 +69,11 @@ nav > ul li {
 
 .icons__row li {
   display: inline-block;
-  background: cornflowerblue;
   margin: var(--base-unit);
 }
 
 .icon {
-  background: cornsilk;
+  background: honeydew;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,14 +81,14 @@ nav > ul li {
 }
 
 .icon__title {
-  background: darksalmon;
+  background: lightskyblue;
   margin-top: calc(var(--base-unit) / 2);
 }
 
 /* window styles */
 .window {
   display: none;
-  background: aliceblue;
+  background: var(--bar-color);
   position: absolute;
   border: 1px solid var(--border-color);
 }
@@ -106,7 +108,7 @@ nav > ul li {
 }
 
 .title-bar {
-  background: plum;
+  background: var(--bar-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
