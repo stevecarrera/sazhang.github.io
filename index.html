@@ -75,12 +75,12 @@
 
     <!-- about file -->
     <div class="window window_file" id="about-window">
-      <section>
-        <header class="title-bar">
-          <span class="title-bar__icon"></span>
-          <span class="title-bar__title">about.txt</span>
-          <button class="title-bar__icon">x</button>
-        </header>
+      <header class="title-bar">
+        <span class="title-bar__icon"></span>
+        <span class="title-bar__title">about.txt</span>
+        <button class="title-bar__icon">x</button>
+      </header>
+      <div class="window__content">
         <article>
           <h1>about</h1>
           <p>
@@ -88,18 +88,18 @@
             lost all of its usefulness.
             div has no semantic meaning, so it is quite useful whenever we are altering the HTML purely for the sake of
             styling purposes.
-
+  
             Let’s say that we have a blog post contained inside an article element that we need to wrap in something for
             the sake of styling purposes.
             Reaching for the section element in this circumstance is not the right thing to do.
-
+  
             Though section is technically a generic element, div is the far more appropriate option in this
             circumstance.
             This new wrapping container is not meant to have any semantic meaning behind it and that is exactly what div
             is designed to be used for.
           </p>
         </article>
-      </section>
+      </div>
     </div>
 
     <!-- project folder -->
@@ -109,27 +109,29 @@
         <span class="title-bar__title">projects</span>
         <button class="title-bar__icon">x</button>
       </header>
-      <div class="icons">
-        <ul>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">project1</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">project2</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">project3</span>
-            </div>
-          </li>
-        </ul>
+      <div class="window__content">
+        <div class="icons">
+          <ul>
+            <li>
+              <div class="icon">
+                <div class="icon__img">i</div>
+                <span class="icon__title">project1</span>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <div class="icon__img">i</div>
+                <span class="icon__title">project2</span>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <div class="icon__img">i</div>
+                <span class="icon__title">project3</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -140,27 +142,29 @@
         <span class="title-bar__title">blog</span>
         <button class="title-bar__icon">x</button>
       </header>
-      <div class="icons">
-        <ul>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">blog1.md</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">blog2.md</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <div class="icon__img">i</div>
-              <span class="icon__title">blog3.md</span>
-            </div>
-          </li>
-        </ul>
+      <div class="window__content">
+        <div class="icons">
+          <ul>
+            <li>
+              <div class="icon">
+                <div class="icon__img">i</div>
+                <span class="icon__title">blog1.md</span>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <div class="icon__img">i</div>
+                <span class="icon__title">blog2.md</span>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <div class="icon__img">i</div>
+                <span class="icon__title">blog3.md</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -170,7 +174,6 @@
           <g fill-rule="evenodd"><g fill="#8699d1" fill-opacity="0.4"><path opacity=".5" d="M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z" /><path d="M6 5V0H5v5H0v1h5v94h1V6h94V5H6z" /></g></g>
         </pattern>
       </defs>
-
       <rect x="0" y="0" width="100%" height="100%" fill="url(#graph)" />
     </svg>
   </main>

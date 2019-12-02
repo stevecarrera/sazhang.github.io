@@ -95,6 +95,7 @@ nav > ul li {
 /* window styles */
 .window {
   display: none;
+  flex-direction: column;
   background: var(--body-color);
   position: absolute;
   border: 1px solid var(--border-color);
@@ -115,22 +116,12 @@ nav > ul li {
 }
 
 .title-bar {
-  background: var(--bar-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  background: var(--bar-color);
   padding: 0 calc(var(--base-unit) / 4);
-}
-
-.window article {
-  padding: calc(var(--base-unit) / 2);
-  height: calc(var(--base-unit) * 14);
-  overflow: scroll;
-}
-
-.window article h1 {
-  margin-bottom: calc(var(--base-unit) / 2);
+  width: 100%;
 }
 
 .title-bar__icon {
@@ -139,10 +130,30 @@ nav > ul li {
   height: calc(var(--base-unit) / 2);
 }
 
+.window__content {
+  background: lightgreen;
+  margin: 0 calc(var(--base-unit) / 4) calc(var(--base-unit) / 4);
+  border: 1px solid var(--border-color);
+  height: 100%;
+  overflow: scroll;
+}
+
+.window .icons {
+  position: static;
+}
+
+.window article {
+  padding: calc(var(--base-unit) / 4);
+}
+
+.window article h1 {
+  margin-bottom: calc(var(--base-unit) / 2);
+}
+
 .hidden {
   display: none;
 }
 
 .active {
-  display: block;
+  display: flex;
 }
