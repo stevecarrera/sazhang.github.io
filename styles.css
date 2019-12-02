@@ -18,13 +18,12 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
-button {
-  cursor: pointer;
+a {
+  text-decoration: none;
 }
 
-.desktop {
-  background-image: linear-gradient(19deg, var(--gradient-1) , var(--gradient-2));
-  height: 100vh;
+button {
+  cursor: pointer;
 }
 
 /* main navigation style */
@@ -54,6 +53,12 @@ nav > ul li {
   margin-right: 0;
 }
 
+/* desktop styles */
+.desktop {
+  background-image: linear-gradient(19deg, var(--gradient-1) , var(--gradient-2));
+  height: 100vh;
+}
+
 /* icon styles */
 .icons {
   background: lemonchiffon;
@@ -62,14 +67,16 @@ nav > ul li {
   left: var(--base-unit);
 }
 
-.icons__row {
-  background: darkseagreen;
+.icons ul {
   list-style: none;
+  display: flex;
+  align-content: center;
 }
 
-.icons__row li {
-  display: inline-block;
-  margin: var(--base-unit);
+.icons li {
+  width: calc(var(--base-unit) * 4);
+  border: 1px solid red;
+  margin: 0 var(--base-unit) var(--base-unit) 0;
 }
 
 .icon {
@@ -88,7 +95,7 @@ nav > ul li {
 /* window styles */
 .window {
   display: none;
-  background: var(--bar-color);
+  background: var(--body-color);
   position: absolute;
   border: 1px solid var(--border-color);
 }
@@ -120,7 +127,6 @@ nav > ul li {
   padding: calc(var(--base-unit) / 2);
   height: calc(var(--base-unit) * 14);
   overflow: scroll;
-  background: palegoldenrod;
 }
 
 .window article h1 {
