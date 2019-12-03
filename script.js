@@ -28,9 +28,10 @@ for (let i = 0; i < windows.length; i++) {
   dragElement(windows[i]);
 }
 
-function dragElement(el) {
+function dragElement(win) {
   let currentX = 0, currentY = 0, initX = 0, initY = 0;
-  el.onmousedown = dragStart;
+  let titleBar = win.firstElementChild;
+  titleBar.onmousedown = dragStart;
 
   function dragStart(e) {
     e = e || window.event;
@@ -48,16 +49,16 @@ function dragElement(el) {
     currentY = initY - e.clientY;
     initX = e.clientX;
     initY = e.clientY;
-    if (el.offsetTop - currentY < 24) {
-      el.style.top = 24 + "px";
-    } else {
-      el.style.top = (el.offsetTop - currentY) + "px";
+    let winOffsetTop = win.offsetTop - currentY;
+    if (winOffsetTop < 24) {
+      winOffsetTop = 24;
     }
-    
-    if (el.offsetLeft - currentX < 0) {
-      el.style.left = 0 + "px";
+    win.style.top = winOffsetTop + "px";
+    let winOffsetLeft = win.offsetLeft - currentX;
+    if (winOffsetLeft < 0) {
+      winOffsetLeft = 0;
     }
-    el.style.left = (el.offsetLeft - currentX) + "px";
+    win.style.left = winOffsetLeft + "px";
   }
 
   function dragEnd() {
