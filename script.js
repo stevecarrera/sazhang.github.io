@@ -29,26 +29,60 @@ for (let i = 0; i < windows.length; i++) {
 }
 
 function dragElement(win) {
-  let currentX = 0, currentY = 0, initX = 0, initY = 0;
   let titleBar = win.firstElementChild;
-  titleBar.onmousedown = dragStart;
+  // register touch listeners
+  titleBar.addEventListener("touchstart", dragStart, false);
+  document.addEventListener("touchend", dragEnd, false);
+  document.addEventListener("touchmove", drag, false);
+  // register mouse listeners
+  titleBar.addEventListener("mousedown", dragStart, false);
+  document.addEventListener("mouseup", dragEnd, false);
+  document.addEventListener("mousemove", drag, false);
+
+  let isDraggable = false;
+  let currentX; let currentY; let initX; let initY;
+  let xOffset = 0;
+  let yOffset = 0;
 
   function dragStart(e) {
     e = e || window.event;
     e.preventDefault();
-    initX = e.clientX;
-    initY = e.clientY;
-    document.onmouseup = dragEnd;
-    document.onmousemove = drag;
+    if (e.type === "touchstart") {
+      initX = e.touches[0].clientX - xOffset;
+      initY = e.touches[0].clientY - yOffset;
+      isDraggable = true;
+    } else {
+      initX = e.clientX - xOffset;
+      initY = e.clientY - yOffset;
+      isDraggable = true;
+    }
   }
-
+  
+  function dragEnd(e) {
+    isDraggable = false;
+  }
+  
   function drag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    currentX = initX - e.clientX;
-    currentY = initY - e.clientY;
-    initX = e.clientX;
-    initY = e.clientY;
+    if (isDraggable) {
+      e = e || window.event;
+      e.preventDefault();
+  
+      if (e.type === "touchmove") {
+        currentX = initX - e.touches[0].clientX;
+        currentY = initY - e.touches[0].clientY;
+        initX = e.touches[0].clientX;
+        initY = e.touches[0].clientY;
+      } else {
+        currentX = initX - e.clientX;
+        currentY = initY - e.clientY;
+        initX = e.clientX;
+        initY = e.clientY;
+      }
+      calcNewPosn();
+    }
+  }
+  
+  function calcNewPosn() {
     let winOffsetTop = win.offsetTop - currentY;
     if (winOffsetTop < 24) {
       winOffsetTop = 24;
@@ -59,10 +93,5 @@ function dragElement(win) {
       winOffsetLeft = 0;
     }
     win.style.left = winOffsetLeft + "px";
-  }
-
-  function dragEnd() {
-    document.onmouseup = null;
-    document.onmousemove = null;
   }
 }

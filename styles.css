@@ -16,6 +16,10 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
+  font-size: 80%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
 
 a:link, 
@@ -71,17 +75,16 @@ nav > ul li {
 .icons ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
 }
 
 .icons li {
   width: calc(var(--base-unit) * 4);
-  /* border: 1px solid red; */
   margin: 0 var(--base-unit) var(--base-unit) 0;
 }
 
 .icon {
-  /* background: slategray; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,6 +126,8 @@ nav > ul li {
   justify-content: space-between;
   padding: 0 calc(var(--base-unit) / 4);
   width: 100%;
+  cursor: move;
+  touch-action: none;
 }
 
 .title-bar__icon {
@@ -165,8 +170,20 @@ nav > ul li {
   background-color: var(--gradient-1);
 }
 
-.window article h1 {
+.window__content article h1 {
   margin-bottom: calc(var(--base-unit) / 2);
+}
+
+.window__content article ul {
+  margin: calc(var(--base-unit) / 2) var(--base-unit);
+}
+
+.window__content article ul li {
+  margin-bottom: calc(var(--base-unit) / 2);
+}
+
+.window__content article a {
+  text-decoration: underline;
 }
 
 .hidden {
@@ -177,14 +194,8 @@ nav > ul li {
   display: flex;
 }
 
-#about-window ul {
-  margin: calc(var(--base-unit) / 2) var(--base-unit);
-}
-
-#about-window ul li {
-  margin-bottom: calc(var(--base-unit) / 2);
-}
-
-#about-window a {
-  text-decoration: underline;
+@media all and (min-width: 25em) {
+  body {
+    font-size: 100%;
+  }
 }
