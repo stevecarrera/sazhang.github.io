@@ -63,7 +63,6 @@ nav > ul li {
 
 /* icon styles */
 .icons {
-  background: lemonchiffon;
   position: absolute;
   top: calc(var(--base-unit) * 2);
   left: var(--base-unit);
@@ -77,12 +76,12 @@ nav > ul li {
 
 .icons li {
   width: calc(var(--base-unit) * 4);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 var(--base-unit) var(--base-unit) 0;
 }
 
 .icon {
-  background: honeydew;
+  /* background: slategray; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +89,7 @@ nav > ul li {
 }
 
 .icon__title {
-  background: lightskyblue;
+  background: var(--body-color);
   margin-top: calc(var(--base-unit) / 2);
   text-align: center
 }
@@ -160,6 +159,10 @@ nav > ul li {
 
 .window .icons {
   position: static;
+}
+
+.window .icon__title {
+  background-color: var(--gradient-1);
 }
 
 .window article h1 {
