@@ -90,6 +90,7 @@ nav > ul li {
 .icon__title {
   background: lightskyblue;
   margin-top: calc(var(--base-unit) / 2);
+  text-align: center
 }
 
 /* window styles */
@@ -156,4 +157,16 @@ nav > ul li {
 
 .active {
   display: flex;
+}
+
+#about-window ul {
+  margin: calc(var(--base-unit) / 2) var(--base-unit);
+}
+
+#about-window ul li {
+  margin-bottom: calc(var(--base-unit) / 2);
+}
+
+#about-window a {
+  text-decoration: underline;
 }
