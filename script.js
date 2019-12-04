@@ -1,3 +1,6 @@
+// for stacking windows
+let winZIndex = 1;
+
 // open window upon icon click
 const icons = document.querySelectorAll("[id$='icon']");
 for (let i = 0; i < icons.length; i++) {
@@ -7,6 +10,7 @@ for (let i = 0; i < icons.length; i++) {
   let window = document.querySelector(`#${id.substr(0, idx)}-window`);
   icon.addEventListener('click', event => {
     window.classList.add('active');
+    window.style.zIndex = winZIndex++;
   });
 }
 
@@ -51,10 +55,12 @@ function dragElement(win) {
       initX = e.touches[0].clientX - xOffset;
       initY = e.touches[0].clientY - yOffset;
       isDraggable = true;
+      win.style.zIndex = winZIndex++;
     } else {
       initX = e.clientX - xOffset;
       initY = e.clientY - yOffset;
       isDraggable = true;
+      win.style.zIndex = winZIndex++;
     }
   }
   
@@ -84,13 +90,17 @@ function dragElement(win) {
   
   function calcNewPosn() {
     let winOffsetTop = win.offsetTop - currentY;
-    if (winOffsetTop < 24) {
-      winOffsetTop = 24;
+    if (winOffsetTop < 0) {
+      winOffsetTop = 0;
+    } else if (winOffsetTop + win.offsetHeight > parent.outerHeight) {
+      winOffsetTop = parent.outerHeight - win.offsetHeight;
     }
     win.style.top = winOffsetTop + "px";
     let winOffsetLeft = win.offsetLeft - currentX;
     if (winOffsetLeft < 0) {
       winOffsetLeft = 0;
+    } else if (winOffsetLeft + win.offsetWidth > parent.outerWidth) {
+      winOffsetLeft = parent.outerWidth - win.offsetWidth;
     }
     win.style.left = winOffsetLeft + "px";
   }

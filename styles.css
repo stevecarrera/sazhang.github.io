@@ -61,15 +61,17 @@ nav > ul li {
 
 /* desktop styles */
 .desktop {
-  background-image: linear-gradient(19deg, var(--gradient-1) , var(--gradient-2));
-  height: 100vh;
+  background-image: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 /* icon styles */
 .icons {
   position: absolute;
-  top: calc(var(--base-unit) * 2);
-  left: var(--base-unit);
+  top: var(--base-unit);
+  left: calc(var(--base-unit) / 2);
 }
 
 .icons ul {
@@ -93,7 +95,7 @@ nav > ul li {
 
 .icon__title {
   background: var(--body-color);
-  margin-top: calc(var(--base-unit) / 2);
+  margin-top: calc(var(--base-unit) / 4);
   text-align: center
 }
 
@@ -104,20 +106,27 @@ nav > ul li {
   background: var(--win-color);
   position: absolute;
   border: 1px solid var(--border-color);
+  z-index: 1;
 }
 
 .window_folder {
-  top: calc(var(--base-unit) * 12);
-  right: calc(var(--base-unit) * 2);
-  width: calc(var(--base-unit) * 16);
-  height: calc(var(--base-unit) * 12);
+  width: calc(var(--base-unit) * 12);
+  height: calc(var(--base-unit) * 9);
 }
 
 .window_file {
-  bottom: calc(var(--base-unit) * 2);
-  left: calc(var(--base-unit) * 2);
   width: calc(var(--base-unit) * 12);
   height: calc(var(--base-unit) * 15);
+}
+
+#about-window {
+  top: calc(var(--base-unit) * 6);
+  left: calc(var(--base-unit) / 2);
+}
+
+#projects-window {
+  top: var(--base-unit);
+  left: calc(var(--base-unit) * 8);
 }
 
 .title-bar {
@@ -138,8 +147,8 @@ nav > ul li {
 
 .window__content {
   background: var(--body-color);
-  margin: 0 calc(var(--base-unit) / 4) calc(var(--base-unit) / 4);
-  padding: calc(var(--base-unit) / 4);
+  margin: 0 7px calc(var(--base-unit) / 4);
+  padding: calc(var(--base-unit) / 2);
   outline: 1px solid var(--border-color);
   height: 100%;
   overflow-y: auto;
@@ -152,10 +161,12 @@ nav > ul li {
 .window__content::-webkit-scrollbar-track {
   background-color: var(--win-color);
   border-left: 1px solid var(--border-color);
+  margin: -1px 0;
 }
 
 .window__content::-webkit-scrollbar-thumb {
-  background-color: var(--win-color);
+  /* background-color: var(--win-color); */
+  background-image: linear-gradient(to top, var(--gradient-1), var(--gradient-2));
   border-radius: 0;
   border-top: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
