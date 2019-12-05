@@ -10,4 +10,4 @@ Retro vaporwave inspired operating system interface
 ## TODO
 - [ ] Differentiate icons that open a new tab
 - [ ] Integrate [Instagram API](https://developers.facebook.com/docs/instagram-basic-display-api) to showcase my photos
-- [ ] Integrate [Twitter API](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview) to display my timeline
+- [ ] Integrate [Twitter API](https://developer.twitter.com/en/docs/twitqter-for-websites/timelines/overview) to display my timeline
