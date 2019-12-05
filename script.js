@@ -1,6 +1,19 @@
 // for stacking windows
 let winZIndex = 1;
 
+// for positioning windows
+const pHeight = parent.innerHeight;
+const pWidth = parent.innerWidth;
+
+let about = document.querySelector('#about-window');
+about.style.top = (pHeight / 7) + "px";
+about.style.left = (pWidth / 4) + "px";
+about.classList.add('active');
+
+let projects = document.querySelector('#projects-window');
+projects.style.top = (pHeight / 2) + "px";
+projects.style.left = (pWidth / 9) + "px";
+
 // open window upon icon click
 const icons = document.querySelectorAll("[id$='icon']");
 for (let i = 0; i < icons.length; i++) {
@@ -26,7 +39,6 @@ for (let i = 0; i < windowBtns.length; i++) {
 }
 
 // make windows draggable
-let desktop = document.querySelector('.desktop');
 const windows = document.querySelectorAll("[id$='window']");
 
 for (let i = 0; i < windows.length; i++) {

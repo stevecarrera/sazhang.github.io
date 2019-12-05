@@ -127,15 +127,15 @@ nav > ul li {
   height: calc(var(--base-unit) * 12);
 }
 
-#about-window {
+/* #about-window {
   top: calc(var(--base-unit) * 8);
   right: var(--base-unit);
 }
 
 #projects-window {
-  top: calc(var(--base-unit) * 6);
-  left: calc(var(--base-unit) / 2);
-}
+  top: calc(var(--base-unit) * 2);
+  left: calc(var(--base-unit) * 4);
+} */
 
 .title-bar {
   display: flex;
@@ -260,13 +260,18 @@ nav > ul li {
     padding: 0 calc(var(--base-unit) / 2);
   }
 
+  .window_folder {
+    width: calc(var(--base-unit) * 16);
+    height: calc(var(--base-unit) * 12);
+  }
+
   .window_file {
     width: calc(var(--base-unit) * 12);
     height: calc(var(--base-unit) * 15);
   }
 
-  #about-window {
+  /* #about-window {
     top: calc(var(--base-unit) * 10);
     left: calc(var(--base-unit) * 6);
-  }
+  } */
 }
