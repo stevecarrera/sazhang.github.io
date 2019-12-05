@@ -1,18 +1,4 @@
-// for stacking windows
 let winZIndex = 1;
-
-// for positioning windows
-const pHeight = parent.innerHeight;
-const pWidth = parent.innerWidth;
-
-let about = document.querySelector('#about-window');
-about.style.top = (pHeight / 7) + "px";
-about.style.left = (pWidth / 4) + "px";
-about.classList.add('active');
-
-let projects = document.querySelector('#projects-window');
-projects.style.top = (pHeight / 2) + "px";
-projects.style.left = (pWidth / 9) + "px";
 
 // open window upon icon click
 const icons = document.querySelectorAll("[id$='icon']");
@@ -52,11 +38,9 @@ for (let i = 0; i < windows.length; i++) {
 
 function dragElement(win) {
   let titleBar = win.firstElementChild;
-  // register touch listeners
   titleBar.addEventListener("touchstart", dragStart, {passive: true});
   document.addEventListener("touchend", dragEnd, false);
   document.addEventListener("touchmove", drag, {passive: true});
-  // register mouse listeners
   titleBar.addEventListener("mousedown", dragStart, false);
   document.addEventListener("mouseup", dragEnd, false);
   document.addEventListener("mousemove", drag, false);

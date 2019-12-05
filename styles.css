@@ -127,15 +127,15 @@ nav > ul li {
   height: calc(var(--base-unit) * 12);
 }
 
-/* #about-window {
-  top: calc(var(--base-unit) * 8);
-  right: var(--base-unit);
+#about-window {
+  top: 20vh;
+  left: 30vw;
 }
 
 #projects-window {
-  top: calc(var(--base-unit) * 2);
-  left: calc(var(--base-unit) * 4);
-} */
+  top: 35vh;
+  left: 5vw;
+}
 
 .title-bar {
   display: flex;
@@ -269,9 +269,4 @@ nav > ul li {
     width: calc(var(--base-unit) * 12);
     height: calc(var(--base-unit) * 15);
   }
-
-  /* #about-window {
-    top: calc(var(--base-unit) * 10);
-    left: calc(var(--base-unit) * 6);
-  } */
 }
