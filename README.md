@@ -1,7 +1,7 @@
 # sazhang.github.io
 Retro vaporwave inspired operating system interface
 
-* Built with HTML, CSS, and JavaScript and hsted on Netlify
+* Built with HTML, CSS, and JavaScript and hosted on Netlify
 * SVG icons from https://feathericons.com/
 * Graph paper pattern from https://www.heropatterns.com/
 * Vaporwave hex color codes from https://natsukis.livejournal.com/4353.html
