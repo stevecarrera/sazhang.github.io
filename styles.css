@@ -137,6 +137,11 @@ nav > ul li {
   left: 5vw;
 }
 
+#twitter-window {
+  top: 40vh;
+  left: 20vw;
+}
+
 .title-bar {
   display: flex;
   align-items: center;
@@ -192,6 +197,10 @@ nav > ul li {
   outline: 1px solid var(--border-color);
   height: 100%;
   overflow-y: auto;
+}
+
+#twitter-window .window__content {
+  padding: 0;
 }
 
 .window__content::-webkit-scrollbar {
