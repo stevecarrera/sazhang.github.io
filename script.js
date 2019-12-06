@@ -105,3 +105,26 @@ function dragElement(win) {
     win.style.left = winOffsetLeft + "px";
   }
 }
+
+// modify font style of twitter timeline
+function injectStyles(win) {
+  let styleLink = document.createElement("link");
+  styleLink.href = "twitter.css"; 
+  styleLink.rel = "stylesheet"; 
+  styleLink.type = "text/css"; 
+  win.firstElementChild.contentDocument.head.appendChild(styleLink);
+}
+
+let observer = new MutationObserver(function (mutations, observer) {
+  let twitterWin = document.querySelector("#twitter-window .window__content");
+  if (twitterWin.firstElementChild.id == "twitter-widget-0") {
+    injectStyles(twitterWin);
+    observer.disconnect();
+    return;
+  }
+});
+
+observer.observe(document, {
+  childList: true,
+  subtree: true
+});

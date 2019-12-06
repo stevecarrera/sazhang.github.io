@@ -11,4 +11,3 @@ Retro vaporwave inspired operating system interface
 - [ ] Differentiate icons that open a new tab
 - [ ] Integrate [Instagram API](https://developers.facebook.com/docs/instagram-basic-display-api) to showcase my photos
 - [x] Integrate [Twitter API](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview) to display my timeline
-- [ ] Style tweets to stay consistent with theme
