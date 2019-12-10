@@ -9,6 +9,7 @@ for (let i = 0; i < icons.length; i++) {
   let window = document.querySelector(`#${id.substr(0, idx)}-window`);
   icon.addEventListener("click", event => {
     window.classList.add("active");
+    window.setAttribute("aria-hidden", "false");
     window.style.zIndex = winZIndex++;
   });
 }
@@ -21,6 +22,7 @@ for (let i = 0; i < windowBtns.length; i++) {
     event.stopPropagation();
     let window = btn.closest(".window");
     window.classList.remove("active");
+    window.setAttribute("aria-hidden", "true");
   });
 }
 
