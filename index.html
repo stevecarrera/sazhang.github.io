@@ -28,7 +28,6 @@
   <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135465108-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -138,10 +137,10 @@
                 writing automated tests in Cypress for the new e-comm system at <a href="https://www.honest.com/" target="_blank" rel="noopener">The Honest Company</a>
               </li>
               <li>
-                participating in <a href="https://adventofcode.com/" target="_blank" rel="noopener">Advent Of Code</a> using JS 👉 <a href="https://github.com/sazhang/adventofcode" target="_blank" rel="noopener">repo</a>
+                <a href="https://twitter.com/szhangster" target="_blank" rel="noopener">tweeting</a> my #100DaysOfCode journey through front end development
               </li>
               <li>
-                <a href="https://twitter.com/szhangster" target="_blank" rel="noopener">tweeting</a> my #100DaysOfCode journey through front end development
+                participating in <a href="https://adventofcode.com/" target="_blank" rel="noopener">Advent Of Code</a> using JS 👉 <a href="https://github.com/sazhang/adventofcode" target="_blank" rel="noopener">repo</a>
               </li>
             </ul>
             Get in touch by <a href="mailto:zhang.sar@husky.neu.edu">emailing me</a> or sliding into my social media DMs. 👋
@@ -212,7 +211,7 @@
       </header>
       <div class="window__content">
         <a class="twitter-timeline" href="https://twitter.com/szhangster" data-tweet-limit="10" data-chrome="noheader nofooter"></a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script defer src="https://platform.twitter.com/widgets.js" charset="utf-8" crossorigin="anonymous"></script>
       </div>
     </div>
 
@@ -226,6 +225,19 @@
     </svg>
   </main>
 
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: { 
+        families: ['Source Code Pro'] 
+      }
+    };
+    (function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.async = true;
+      s.parentNode.insertBefore(wf, s);
+    })(document);
+  </script>
   <script src="script.js"></script>
 </body>
 
